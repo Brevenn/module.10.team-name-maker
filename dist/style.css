@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: .5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.box {
+    border: 1px solid darkslategray;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f5f4f7;
+}
+
+.bg-color-1 { 
+    background-color: #f8b195;
+}
+.bg-color-2 { 
+    background-color: #f67280;
+}
+.bg-color-3 { 
+    background-color: #c06c84;
+}
+.bg-color-4 { 
+    background-color: #6C5B7B;
+}
+.bg-color-5 { 
+    background-color: #355C7D;
+}
+
+.name-role {
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-team {
+    background-color: #36237b;
+}
+
+.manager-name {
+    background-color: #ca4e4e;
+}
+
+.engineer-name {
+    background-color: #174117;
+}
+
+.intern-name {
+    background-color: #b8751e;
+}
+
+.employee-info {
+    background-color: #f5f4f7;
+}
+
+.card {
+    background-color: #355C7D;
+}

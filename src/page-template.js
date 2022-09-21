@@ -57,5 +57,41 @@ const intern = internData => {
 const employeesDiv = employeesArr => {
     let employeeHtml = ''
 
-    for 
+    for ( i = 0; i < employeesArr.length; i++) {
+    if ( employeesArr[i].getRole() === 'Manager') {
+        employeeHtml = employeeHtml + manager(employeesArr[i])
+    }
+    if (employeesArr[i].getRole() === "Engineer"){
+        employeeHtml = employeeHtml + engineer(employeesArr[i])
+    }
+    if (employeesArr[i].getRole() === "Intern"){
+        employeeHtml = employeeHtml + engineer(employeesArr[i])
+    }
+  } return employeeHtml
 }
+
+const template = data => {
+    return `
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Team Name</title>
+            <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="./style.css"><source src="../page-template.js" type="page-template">
+        </head>
+        <body>
+            <header class = "container">
+                <div class = "flex box justify-center my-team">
+                    <h1> My Team </h1>
+                </div>
+            </header>
+            <main class = "container">
+                ${employeesDiv(data)}
+            </main>
+        </body>
+    </html>
+
+`
+}
+
+module.exports = template;
