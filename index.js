@@ -34,3 +34,29 @@ const internQuestions = () => {
         return employeePrompt();
     })
 }
+
+const employeePrompt = () => {
+    inquirer.createPromptModule([{
+        type: 'list',
+        name: 'employeeType',
+        message: "What kind of team member would you like to add?",
+        choices: [
+            {name: 'Engineer', value: "addEngineer"},
+            {name: 'Intern', value: "addIntern"},
+            {name: 'DONE', value: "done"}
+        ]
+    }])
+    .then( answer => {
+        if (answer.employeeType === 'addEngineer') { engineerQuestions(); };
+        if (answer.employeeType === 'addIntern') { internQuestions(); };
+        if (answer.employeeType === 'done') {
+
+            let html = template(employeesArr)
+            console.log('...')
+
+            writeFile(html);
+        }
+    })
+}
+
+init();
