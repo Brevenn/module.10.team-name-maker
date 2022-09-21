@@ -35,3 +35,27 @@ const engineer = engineerData => {
     </div>
 `
 }
+
+const intern = internData => {
+    return`
+    <div id="${internData.getRole()}-card" class="box card">
+        <div class="box name-role intern-name">
+            <h2>${internData.getName()}</h2>
+            <h3>Role: ${internData.getRole()}</h3>
+        </div>
+        <div class="box employee-info">
+            <ul class="list-group">
+                <li class="list-group-item">ID: ${internData.getId()}</li>
+                <li class="list-group-item">Email: <a href="malito:${internData.getEmail()}">${internData.getEmail()}</a></li>
+                <li class="list-group-item">School: ${internData.getSchool()}</li>
+            </ul>
+        </div>
+    </div>
+`
+}
+
+const employeesDiv = employeesArr => {
+    let employeeHtml = ''
+
+    for 
+}
