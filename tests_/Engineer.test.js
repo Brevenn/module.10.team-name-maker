@@ -16,5 +16,5 @@ test ('Checks all methods for Engineer class', () => {
     expect(employee.getId()).toBe(employee.id);
     expect(employee.getEmail()).toBe(employee.email);
     expect(employee.getGithub()).toBe(employee.github);
-    expect(employee.getRole()).toBe('Employee');
+    expect(employee.getRole()).toBe('Engineer');
 })
