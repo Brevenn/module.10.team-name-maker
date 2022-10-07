@@ -1,61 +1,44 @@
-# Welcome to my Team Generator!
-_____________________________
+# **Welcome to my Team Generator!**
 
-## Description:
+#
 
-Here you can find a command-line application using Node.js. This application will displays information about a full-stack development team with a summarized section for each person involved in the team.
-_____________________________
+### *Description:*
 
-### USER STORY:
-AS A manager
+**Here you can find a command-line application using Node.js. This application will displays information about a full-stack development team with a summarized section for each person involved in the team.**
 
-I WANT to generate a webpage that displays my team's basic info
+#
 
-SO THAT I have quick access to their emails and GitHub profiles
-_____________________________
+### *USER STORY:*
 
-### Acceptance Criteria: 
-GIVEN a command-line application that accepts user input
+![User Story](/img/user-story.png)
 
-WHEN I am prompted for my team members and their information
+#
 
-THEN an HTML file is generated that displays a nicely formatted team roster based on user input
+### *Demonstration of Application*
 
-WHEN I click on an email address in the HTML
+![Demonstration](https://giphy.com/gifs/EkOowhlbhyCQwOFFyb)
 
-THEN my default email program opens and populates the TO field of the email with the address
+#
 
-WHEN I click on the GitHub username
+### *Technologies Used:*
 
-THEN that GitHub profile opens in a new tab
+- **[Jest](https://www.npmjs.com/package/jest)**
+- **[Node.js](http://nodejs.org/en/)**
+- **[Inquirer](https://www.npmjs.com/package/inquirer)**
 
-WHEN I start the application
+#
 
-THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
+#### *References*
 
-WHEN I enter the team manager’s name, employee ID, email address, and office number
+- **[The Coding Boot Camp of UT-Austin](https://techbootcamps.utexas.edu/coding/)**
 
-THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
+#
 
-WHEN I select the engineer option
+#### *Author*
 
-THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
+**Charles Breven Glasgow**
 
-WHEN I select the intern option
+- **[GitHub](https://github.com/Brevenn)**
+- **[LinkedIn](https://www.linkedin.com/in/charles-glasgow-7b07a41a3/)**
 
-THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
-
-WHEN I decide to finish building my team
-
-THEN I exit the application, and the HTML is generated
-_____________________________
-
-## References
-- [Node.js](http://nodejs.org/en/)
-- [Inquirer](https://www.npmjs.com/package/inquirer)
-- [TheCodingBootCampofUTAustin](https://techbootcamps.utexas.edu/coding/)
-_____________________________
-
-## Author
-Charles Breven Glasgow
-- [GitHub](https://github.com/Brevenn)
+#
